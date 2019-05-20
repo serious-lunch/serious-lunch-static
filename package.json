@@ -1,0 +1,19 @@
+{
+  "name": "serious-lunch-static",
+  "version": "1.0.0",
+  "description": "Front-end",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/serious-lunch/serious-lunch-static.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/serious-lunch/serious-lunch-static/issues"
+  },
+  "homepage": "https://github.com/serious-lunch/serious-lunch-static#readme"
+}
