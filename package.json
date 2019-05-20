@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/serious-lunch/serious-lunch-static/issues"
   },
-  "homepage": "https://github.com/serious-lunch/serious-lunch-static#readme"
+  "homepage": "https://github.com/serious-lunch/serious-lunch-static#readme",
+  "devDependencies": {
+    "elm": "^0.19.0-no-deps"
+  }
 }
