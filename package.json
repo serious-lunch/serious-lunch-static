@@ -4,7 +4,7 @@
   "description": "Front-end",
   "main": "index.js",
   "scripts": {
-    "test": "elm test",
+    "test": "elm-test",
     "build": "elm make src/Main.elm"
   },
   "repository": {
