@@ -1,0 +1,25 @@
+{
+  "name": "serious-lunch-static",
+  "version": "1.0.0",
+  "description": "Front-end",
+  "main": "index.js",
+  "scripts": {
+    "test": "elm-test",
+    "build": "elm make src/Main.elm"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/serious-lunch/serious-lunch-static.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/serious-lunch/serious-lunch-static/issues"
+  },
+  "homepage": "https://github.com/serious-lunch/serious-lunch-static#readme",
+  "devDependencies": {
+    "elm": "^0.19.0-no-deps",
+    "elm-format": "^0.8.1",
+    "elm-test": "^0.19.0-rev6"
+  }
+}
