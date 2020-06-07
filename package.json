@@ -8,6 +8,8 @@
   },
   "scripts": {
     "test": "elm-test",
+    "format": "elm-format src/",
+    "validate": "elm-format src/ --validate",
     "build": "elm make src/Main.elm"
   },
   "repository": {
