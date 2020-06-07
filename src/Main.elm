@@ -26,12 +26,17 @@ main =
                 ]
             ]
         , footer [ class "footer" ]
-            [ div [ class "content has-text-centered" ]
-                [ p []
-                    [ text "The "
-                    , a [ target "_blank", rel "noopener", href "https://github.com/serious-lunch" ] [ text "Serious Lunch " ]
-                    , text "by "
-                    , a [ target "_blank", rel "noopener", href "https://github.com/dyoshimitsu" ] [ text "dyoshimitsu" ]
+            [ nav [ class "level" ]
+                [ div [ class "content has-text-centered" ]
+                    [ p []
+                        [ text "The "
+                        , a [ target "_blank", rel "noopener", href "https://github.com/serious-lunch" ] [ text "Serious Lunch " ]
+                        , text "by "
+                        , a [ target "_blank", rel "noopener", href "https://github.com/dyoshimitsu" ] [ text "dyoshimitsu" ]
+                        ]
+                    ]
+                , div [ class "content has-text-centered" ]
+                    [ a [] [ text "About" ]
                     ]
                 ]
             ]
