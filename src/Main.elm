@@ -10,9 +10,6 @@ main =
         [ div [ class "container" ]
             [ h1 [ class "title" ] [ text "Welcome to the Serious Lunch" ]
             , p [ class "subtitle" ]
-                [ text "My first website with "
-                , strong [] [ text "Bulma" ]
-                , text "!"
-                ]
+                [ text "This is the home page for the lunch information sharing service." ]
             ]
         ]
