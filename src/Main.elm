@@ -25,5 +25,14 @@ main =
                     [ text "This is the home page for the lunch information sharing service." ]
                 ]
             ]
-        , footer [ class "footer" ] []
+        , footer [ class "footer" ]
+            [ div [ class "content has-text-centered" ]
+                [ p []
+                    [ text "The "
+                    , a [ target "_blank", rel "noopener", href "https://github.com/serious-lunch" ] [ text "Serious Lunch " ]
+                    , text "by "
+                    , a [ target "_blank", rel "noopener", href "https://github.com/dyoshimitsu" ] [ text "dyoshimitsu" ]
+                    ]
+                ]
+            ]
         ]
