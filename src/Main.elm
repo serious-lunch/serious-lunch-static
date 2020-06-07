@@ -7,7 +7,7 @@ import Html.Attributes exposing (class, href, rel, target)
 main : Html msg
 main =
     div []
-        [ nav [ class "navbar" ]
+        [ nav [ class "navbar is-black" ]
             [ div [ class "navbar-brand" ]
                 [ a [ href "/", class "navbar-item" ] [ text "Serious Lunch" ]
                 ]
