@@ -38,7 +38,7 @@ main =
                 ]
             ]
         , footer [ class "footer" ]
-            [ div [ class "content has-text-centered" ]
+            [ div [ class "content has-text-left" ]
                 [ p []
                     [ text "The "
                     , a [ target "_blank", rel "noopener", href "https://github.com/serious-lunch" ] [ text "Serious Lunch " ]
