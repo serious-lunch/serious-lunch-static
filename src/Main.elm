@@ -8,7 +8,7 @@ main : Html msg
 main =
     section [ class "section" ]
         [ div [ class "container" ]
-            [ h1 [ class "title" ] [ text "Hello World!" ]
+            [ h1 [ class "title" ] [ text "Welcome to the Serious Lunch" ]
             , p [ class "subtitle" ]
                 [ text "My first website with "
                 , strong [] [ text "Bulma" ]
