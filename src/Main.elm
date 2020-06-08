@@ -1,7 +1,7 @@
 module Main exposing (main)
 
-import Html exposing (Html, a, div, footer, h1, nav, p, section, strong, text, img)
-import Html.Attributes exposing (class, href, rel, target, src)
+import Html exposing (Html, a, div, footer, h1, img, nav, p, section, strong, text)
+import Html.Attributes exposing (class, href, rel, src, target)
 
 
 main : Html msg
@@ -35,7 +35,7 @@ main =
                 [ h1 [ class "title" ] [ text "Welcome to the Serious Lunch" ]
                 , p [ class "subtitle" ]
                     [ text "This is the home page for the lunch information sharing service." ]
-                , img [src "/img/in_progress.png"] []
+                , img [ src "/img/in_progress.png" ] []
                 ]
             ]
         , footer [ class "footer" ]
