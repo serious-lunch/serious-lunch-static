@@ -19,7 +19,7 @@ jobs:
   delivery:
 
     if: github.ref == 'refs/heads/master'
-    needs: build
+    needs: integration
     runs-on: ubuntu-latest
 
     steps:
