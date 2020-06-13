@@ -15,3 +15,25 @@ jobs:
           npm install --frozen-lockfile
           npm run validate
           npm run test
+
+  delivery:
+
+    if: github.ref == 'refs/heads/master'
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@master
+      - name: delivery
+        run: |
+          npm install --frozen-lockfile
+          npm build
+          aws s3 cp ./index.html s3://serious-lunch.com
+          aws s3 cp ./favicon.ico s3://serious-lunch.com
+          aws s3 cp ./elm.js s3://serious-lunch.com
+          aws s3 sync ./img s3://serious-lunch.com/img --delete
+          aws cloudfront create-invalidation --distribution-id E1PR5MWR7D3MM3 --paths "/*"
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: 'ap-northeast-1'
