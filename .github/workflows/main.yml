@@ -1,0 +1,17 @@
+
+name: CI/CD
+
+on: push
+
+jobs:
+  Integration:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: Cannot include these characters.
+        run: |
+        npm install --frozen-lockfile
+        npm run validate
+        npm run test
