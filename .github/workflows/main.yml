@@ -4,14 +4,14 @@ name: CI/CD
 on: push
 
 jobs:
-  Integration:
+  integration:
 
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v1
-      - name: Cannot include these characters.
+      - name: integration
         run: |
-        npm install --frozen-lockfile
-        npm run validate
-        npm run test
+          npm install --frozen-lockfile
+          npm run validate
+          npm run test
