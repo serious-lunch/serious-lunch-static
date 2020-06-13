@@ -27,7 +27,7 @@ jobs:
       - name: delivery
         run: |
           npm install --frozen-lockfile
-          npm build
+          npm run build
           aws s3 cp ./index.html s3://serious-lunch.com
           aws s3 cp ./favicon.ico s3://serious-lunch.com
           aws s3 cp ./elm.js s3://serious-lunch.com
